@@ -1,0 +1,8 @@
+version: '3.8'  # Recommended modern version
+
+services:
+  react-app:
+    build: .
+    ports:
+      - "3000:80"  # Host:Container — serve React app on localhost:3000
+    restart: unless-stopped
